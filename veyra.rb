@@ -5,22 +5,22 @@
 class Veyra < Formula
   desc "Find duplicate and visually similar images and videos"
   homepage "https://github.com/RishiKendai/veyra"
-  version "0.1.0"
+  version "0.1.1"
 
   depends_on "ffmpeg"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.0/veyra_darwin_amd64.tar.gz"
-      sha256 "52df1f3b1fd609d347ee8031792628688f9023e110eea2a76736a6314dbda82a"
+      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.1/veyra_darwin_amd64.tar.gz"
+      sha256 "ff4fd9a83d4e70ca9a86ebac6252f5632f830e05925641d56b55146b5ad752ce"
 
       define_method(:install) do
         bin.install "veyra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.0/veyra_darwin_arm64.tar.gz"
-      sha256 "8fdf0ce3e8a6c0696f9df823463d6bd76a1283e2a66c1c82fdc870fd678d42e7"
+      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.1/veyra_darwin_arm64.tar.gz"
+      sha256 "ad5812b4e153b3725ee991af9116edc8a62b184ca22f9ff037074b7b5a8ab068"
 
       define_method(:install) do
         bin.install "veyra"
@@ -30,15 +30,15 @@ class Veyra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.0/veyra_linux_amd64.tar.gz"
-      sha256 "82f6c6c199c60e491ce88b48b899ef856e41c762637a1a783c6d46f9ebb3970e"
+      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.1/veyra_linux_amd64.tar.gz"
+      sha256 "1bd133ad57d894274246238beb5530ba6b3b503996a1fac440c53cb391cad45f"
       define_method(:install) do
         bin.install "veyra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.0/veyra_linux_arm64.tar.gz"
-      sha256 "b6a0f8f79f650d91d9c655769a84860d64e5c1d12f1fa57dae124340070a1c38"
+      url "https://github.com/RishiKendai/veyra/releases/download/v0.1.1/veyra_linux_arm64.tar.gz"
+      sha256 "1a50a9a6a5d2d78e5e80e07483232666bb2f58eb85cfd64817cef52b7b28f51d"
       define_method(:install) do
         bin.install "veyra"
       end
